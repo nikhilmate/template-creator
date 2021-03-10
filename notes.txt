@@ -1,0 +1,28 @@
+TODO:
+1. create editor page - grapesjs
+2. create and link components in the editor
+3. different layouts and settings
+
+
+points:
+1. code to convert components/page into grapesjs component
+2. create common layouts and basic components and link to grapesjs
+3. layouts working
+
+
+components in gjs:
+- code components in codepen env
+- CRUD operation
+
+
+case study 1:
+=> types of pages:
+lander(short/long), ty page(independent pages), newtabs, microsites, footer pages(pp, tos)
+
+=> types of popups:
+arrows(allow/yes), cancelbanner, keep changes
+
+=> points
+1. components which are included can extend css anad js indivisually
+2. have to maintain some temp env to work around files
+3. single baselayout => types of sub layouts -> nested layouts(optional) => body component -> components -> nested compoonents

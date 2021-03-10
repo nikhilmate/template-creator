@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guide');
 });
+Route::get('/editor', function () {
+    return view('editor.index');
+});

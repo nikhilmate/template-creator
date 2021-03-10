@@ -1,12 +1,8 @@
-const mix = require("laravel-mix");
+const mix = require('laravel-mix');
+const webpackCompileModule = require('./webpackCompileModule.js');
+const compileFiles = webpackCompileModule.compileFiles;
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel applications. By default, we are compiling the CSS
- | file for the application as well as bundling up all the JS files.
- |
- */
+const g_css = 'node_modules/grapesjs/dist/css/grapes.min.css';
+
+compileFiles('resources/assets/editor/js/index.js', 'public/assets/js/editor.js', mix.js);
+compileFiles([g_css, 'resources/assets/editor/css/reset.css', 'resources/assets/editor/css/index.css'], 'public/assets/css/editor.css');
